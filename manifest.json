@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "FFL Text To Link Converstion CR",
+    "version": "7.9",
+    "description": "Convert Text of FFL numbers into hyperlinks directed to ATF's FFL EzCheck.",
+    "permissions": ["activeTab", "scripting"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
